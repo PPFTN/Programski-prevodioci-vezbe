@@ -11,7 +11,7 @@
 <h3> Ciljevi prevodioca </h3>
   <ul>
   <li><b> ispravno prevođenje</b></li>
-  <li>brzo izvršavanje kompajlera</li>
+  <li>brzo izvršavanje prevodioca</li>
   <li>brzo izvršavanje samog programa </li>
   <li>optimalno korišćenje memorije, procesora </li>
   <li>informativne poruke o greškama, oporavak od grešaka </li>
