@@ -5,8 +5,9 @@
 
 <b>Programski prevodilac</b> prevodi program napisan u jednom jeziku u drugi. Najčešće se prevodi sa jezika višeg nivoa, na jezike nižeg nivoa, odnosno sa onoga jezika koji programer razume, na jezik koji razume računar.
 
-<img align="center" src="https://binarymove.com/wp-content/uploads/2018/12/c-compiling.png">
-
+<p align="center">
+<img src="https://binarymove.com/wp-content/uploads/2018/12/c-compiling.png">
+</p>
 <h3> Ciljevi prevodioca </h3>
   <ul>
   <li><b> ispravno prevođenje</b></li>
