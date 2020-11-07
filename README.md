@@ -60,4 +60,5 @@ Svi gore navedeni alati su dostupni u repozitorijumima popularnih GNU/Linux dist
 <ol> 
   <li> Uvod u skener, upoznavanje sa regularnim izrazima </li>
   <li> Uvod u parser, kreiranje gramatike upotrebom BNF notacije </li>
+  <li> Upoznavanje sa miniC jezikom </li>
 </ol>
