@@ -39,7 +39,7 @@ Svaki prevodilac se sastoji iz faza:
 <h2>Cilj predmeta </h2>
 <ul>
   <li>Napraviti kompajler koji radi </li>
-  <li>Uvideti šta su osnovni zadaci svakog pevodioca </li>
+  <li>Uvideti šta su osnovni zadaci svakog prevodioca </li>
 </ul>
 
 
