@@ -62,4 +62,5 @@ Svi gore navedeni alati su dostupni u repozitorijumima popularnih GNU/Linux dist
   <li> Uvod u parser, kreiranje gramatike upotrebom BNF notacije </li>
   <li> Upoznavanje sa sintaksom miniC jezika </li>
   <li> Semantička analiza </li>
+  <li> Generisanje koda </li>
 </ol>
