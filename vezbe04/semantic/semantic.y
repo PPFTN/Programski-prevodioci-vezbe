@@ -217,11 +217,7 @@ return_statement
         if(get_type(fun_idx) != get_type($2))
           err("incompatible types in return");
       }
-	| _RETURN _SEMICOLON
-		{
-			if(get_type(fun_idx) == INT ||get_type(fun_idx) == UINT )
-					warn("int or uint function must return a value");
-		}
+	
   ;
 
 %%
