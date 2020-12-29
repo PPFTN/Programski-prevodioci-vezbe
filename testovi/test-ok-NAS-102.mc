@@ -5,7 +5,7 @@ unsigned main() {
 	x = 1u; 
 	b = 2u;
 	c = x + b;
-	return a;
+	return x;
 }
 
 int inc(int p, unsigned q){
