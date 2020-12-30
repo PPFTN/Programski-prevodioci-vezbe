@@ -52,12 +52,33 @@
 %%
 
 program
-  : function_list
+  : global_list function_list
       {  
         if(lookup_symbol("main", FUN) == NO_INDEX)
           err("undefined reference to 'main'");
       }
   ;
+
+
+global_list
+	: /*empty*/
+	| global_list global_var
+	;
+
+global_var
+	: _TYPE _ID _SEMICOLON
+	{
+		int idx = lookup_symbol($2, GVAR); 
+		if (idx != NO_INDEX) 
+		{
+				err("redefinition of '%s'", $2);
+		} else {
+			insert_symbol($2, GVAR, $1, NO_ATR, NO_ATR);
+			code("\n%s:\n\t\tWORD\t1", $2);
+		}
+	}
+	;
+
 
 function_list
   : function
@@ -145,7 +166,7 @@ compound_statement
 assignment_statement
   : _ID _ASSIGN num_exp _SEMICOLON
       {
-        int idx = lookup_symbol($1, VAR|PAR);
+        int idx = lookup_symbol($1, VAR|PAR|GVAR);
         if(idx == NO_INDEX)
           err("invalid lvalue '%s' in assignment", $1);
         else
@@ -181,7 +202,7 @@ exp
 
   | _ID
       {
-        $$ = lookup_symbol($1, VAR|PAR);
+        $$ = lookup_symbol($1, VAR|PAR|GVAR);
         if($$ == NO_INDEX)
           err("'%s' undeclared", $1);
       }
