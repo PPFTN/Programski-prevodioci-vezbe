@@ -1,6 +1,6 @@
 //OPIS: funkcija sa 1 i 0 parametara
 //RETURN: 4
-int main(int p) {
+int func1(int p) {
     int x, b;
     int c;
     x = p;
@@ -8,8 +8,8 @@ int main(int p) {
     return x;
 }
 
-int func1(){
+int main(){
 	int b;
-	b = main(4);
+	b = func1(4);
 	return b;
 }
