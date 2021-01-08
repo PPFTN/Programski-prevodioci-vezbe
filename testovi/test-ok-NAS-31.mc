@@ -1,5 +1,5 @@
 //OPIS: jedna deklaracija sa dve promenljive
-//RETRUN: 2
+//RETURN: 2
 
 int main(int p) {
     int x, b;
